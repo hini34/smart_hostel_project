@@ -1,0 +1,1 @@
+Smart Hostel Management System is a web-based application developed using PHP and MySQL. It provides separate dashboards for Admin, Student, and Security Guard to manage hostel operations efficiently, including room allocation, attendance, leave management, complaints, visitor records, and notifications.
