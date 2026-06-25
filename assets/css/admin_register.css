@@ -1,0 +1,120 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+}
+
+.card{
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+}
+
+.card h3{
+    font-weight: 600;
+    color: #333;
+}
+
+.form-label{
+    font-weight: 500;
+    color: #555;
+}
+
+.input-group-text{
+    background: #f1f1f1;
+    border-right: none;
+}
+
+.form-control{
+    border-left: none;
+    box-shadow: none !important;
+}
+
+.form-control:focus{
+    border-color: #ced4da;
+}
+
+.btn{
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.btn-primary,
+.btn-success{
+    transition: 0.3s;
+}
+
+.btn-primary:hover,
+.btn-success:hover{
+    transform: translateY(-2px);
+}
+
+a{
+    text-decoration: none;
+}
+
+.signup-text{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.signup-text a{
+    font-weight: 600;
+}
+
+/* Mobile */
+@media (max-width: 576px){
+
+    .card{
+        padding: 20px !important;
+    }
+
+    .card h3{
+        font-size: 1.5rem;
+    }
+
+    .btn{
+        font-size: 14px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .card{
+        max-width: 550px;
+    }
+
+    .card h3{
+        font-size: 2rem;
+    }
+
+    .form-control,
+    .input-group-text{
+        padding: 12px;
+    }
+
+    .btn{
+        padding: 12px;
+        font-size: 16px;
+    }
+}

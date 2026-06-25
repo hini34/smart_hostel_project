@@ -1,0 +1,261 @@
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main-content{
+    margin-left: 260px;
+    padding: 25px;
+    background: #f1f5f9;
+    min-height: 100vh;
+}
+/* Mobile Navbar */
+.navbar-main{
+    background: #111827;
+    box-shadow: 0 2px 10px rgba(15,23,42,.5);
+}
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.request-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.page-title{
+    font-size: 38px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 5px;
+}
+
+.page-subtitle{
+    font-size: 17px;
+    color: #64748b;
+}
+
+
+/* =========================
+   REQUEST COUNT
+========================= */
+
+.request-count{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+
+    box-shadow: 0 10px 25px rgba(37,99,235,0.3);
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.custom-card{
+    border: none;
+    border-radius: 22px;
+    background: white;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.06);
+    overflow: hidden;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.custom-table{
+    margin: 0;
+}
+
+.custom-table tbody tr{
+    transition: 0.3s;
+}
+
+.custom-table tbody tr:hover{
+    background: #f8fafc;
+}
+
+
+/* =========================
+   TABLE TD
+========================= */
+
+.custom-table td{
+    vertical-align: middle;
+    padding: 25px 15px;
+    border-bottom: 1px solid #eef2f7;
+}
+
+
+/* =========================
+   PHOTO
+========================= */
+
+.student-photo{
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 3px solid #e2e8f0;
+}
+
+
+/* =========================
+   STUDENT NAME
+========================= */
+
+.student-name{
+    font-size: 22px;
+    font-weight: 700;
+    color: #0f172a;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   ENROLLMENT BADGE
+========================= */
+
+.badge{
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+
+/* =========================
+   EMAIL & MOBILE
+========================= */
+
+.custom-table td:nth-child(5),
+.custom-table td:nth-child(6){
+    font-size: 16px;
+    color: #334155;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.action-buttons{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-btn{
+    border-radius: 12px;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    min-width: 120px;
+}
+
+
+/* =========================
+   APPROVE BUTTON
+========================= */
+
+.btn-success{
+    background: #16a34a;
+    border: none;
+}
+
+.btn-success:hover{
+    background: #15803d;
+}
+
+
+/* =========================
+   REJECT BUTTON
+========================= */
+
+.btn-danger{
+    background: #dc2626;
+    border: none;
+}
+
+.btn-danger:hover{
+    background: #b91c1c;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .main-content{
+        margin-left: 0;
+        padding-top: 90px;
+    }
+
+    .request-header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .page-title{
+        font-size: 28px;
+    }
+
+    .student-photo{
+        width: 65px;
+        height: 65px;
+    }
+
+    .student-name{
+        font-size: 16px;
+        white-space: normal;
+    }
+
+    .action-buttons{
+        flex-direction: column;
+    }
+
+    .custom-btn{
+        width: 100%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 992px){
+
+    .main-content{
+        margin-left: 260px;
+        width: calc(100% - 260px);
+        padding: 25px;
+    }
+}
+
+/* Mobile + Tablet */
+@media (max-width: 991.98px){
+
+    .main-content{
+        margin-left: 0 !important;
+        width: 100% !important;
+        padding: 85px 15px 20px;
+    }
+}

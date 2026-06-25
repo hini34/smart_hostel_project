@@ -1,0 +1,61 @@
+
+body {
+    background: #f4f6fb;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Heading area */
+h3 {
+    font-weight: 600;
+    color: #0f172a;
+}
+small.text-muted {
+    font-size: 0.9rem;
+}
+
+/* Card */
+.card {
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+    background: #ffffff;
+}
+
+/* Back Button */
+.btn-secondary {
+    border-radius: 999px;
+    padding: 6px 16px;
+}
+
+/* Table Styling */
+table.table {
+    border-radius: 12px;
+    overflow: hidden;
+}
+thead {
+    background: #111827;
+    color: #e5e7eb;
+}
+thead th {
+    border-color: #111827 !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+tbody tr:hover {
+    background: #eef2ff;
+}
+tbody td {
+    font-size: 0.95rem;
+    vertical-align: middle;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+    h3 {
+        font-size: 1.3rem;
+    }
+    table {
+        font-size: 0.85rem;
+    }
+}

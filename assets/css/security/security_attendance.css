@@ -1,0 +1,317 @@
+body {
+    background: #f4f7fb;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Mobile Topbar */
+/* ==========================
+   MOBILE TOPBAR
+========================== */
+.mobile-topbar {
+    background: linear-gradient(135deg, #0f172a, #1e40af);
+    height: 70px;
+    padding: 0 18px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.15);
+    z-index: 1050;
+}
+
+.mobile-topbar .container-fluid {
+    height: 100%;
+}
+
+.mobile-topbar .btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-topbar .navbar-brand {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.mobile-topbar .navbar-brand i {
+    color: #f8fafc;
+}
+
+.user-badge {
+    background: rgba(255,255,255,0.18);
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.attendance-page {
+    padding: 24px;
+}
+
+.attendance-header-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.attendance-header-card h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.attendance-header-card p {
+    color: #64748b;
+    font-size: 1rem;
+}
+
+.header-time-box {
+    min-width: 260px;
+    background: linear-gradient(135deg, #0f172a, #08132d);
+    color: #fff;
+    border-radius: 20px;
+    padding: 22px 18px;
+    text-align: center;
+}
+
+.header-time-box .small-label {
+    display: block;
+    font-size: 0.95rem;
+    opacity: 0.85;
+    margin-bottom: 8px;
+}
+
+.header-time-box strong {
+    font-size: 1.45rem;
+    font-weight: 700;
+}
+
+.stat-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    height: 100%;
+}
+
+.stat-icon {
+    width: 84px;
+    height: 84px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.9rem;
+    flex-shrink: 0;
+}
+
+.total-card .stat-icon {
+    background: linear-gradient(135deg, #3b82f6, #60a5fa);
+}
+
+.present-card .stat-icon {
+    background: linear-gradient(135deg, #16a34a, #4ade80);
+}
+
+.absent-card .stat-icon {
+    background: linear-gradient(135deg, #dc2626, #f87171);
+}
+
+.stat-card h6 {
+    font-size: 1rem;
+    color: #64748b;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.stat-card h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.stat-card p {
+    margin-bottom: 0;
+    color: #64748b;
+}
+
+.attendance-panel {
+    border-radius: 24px;
+}
+
+.stats-row {
+    margin-bottom: 28px;
+}
+
+.attendance-panel {
+    border-radius: 24px;
+    margin-top: 8px;
+}
+
+.panel-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.panel-title {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.panel-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-box {
+    position: relative;
+    min-width: 280px;
+}
+
+.search-box i {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #64748b;
+}
+
+.search-box input {
+    padding-left: 40px;
+    height: 46px;
+    border-radius: 14px;
+    border: 1px solid #dbe2ea;
+}
+
+.attendance-table thead th {
+    background: #f8fafc;
+    color: #334155;
+    font-weight: 700;
+    border-bottom: 1px solid #e2e8f0;
+    white-space: nowrap;
+}
+
+.attendance-table tbody tr {
+    vertical-align: middle;
+}
+
+.attendance-table tbody tr:hover {
+    background: #f8fbff;
+}
+
+.student-photo {
+    width: 54px;
+    height: 54px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 2px solid #e2e8f0;
+}
+
+.student-name {
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.status-badge {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+    border-radius: 999px;
+}
+
+.action-btn-group {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 991px) {
+    .attendance-header-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-time-box {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .attendance-page {
+        padding: 16px;
+    }
+
+    .attendance-header-card h1 {
+        font-size: 1.5rem;
+    }
+
+    .search-box {
+        min-width: 100%;
+    }
+
+    .panel-actions {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .panel-actions .btn {
+        width: 100%;
+    }
+
+    .action-btn-group {
+        flex-direction: column;
+    }
+
+    .action-btn-group .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .mobile-topbar {
+        height: 65px;
+        padding: 0 12px;
+    }
+
+    .mobile-topbar .navbar-brand {
+        font-size: 0.95rem;
+    }
+
+    .user-badge {
+        padding: 6px 10px;
+        font-size: 0.75rem;
+        max-width: 90px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+@media (max-width: 991.98px) {
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding-top: 90px;
+    }
+}

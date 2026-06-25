@@ -1,0 +1,135 @@
+body {
+    background: #f4f7fb;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #1e293b;
+}
+
+.navbar-main {
+    background: #000 !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,.5);
+}
+
+
+.page-wrapper {
+    margin-left: 250px;
+    padding: 24px;
+    min-height: 100vh;
+}
+
+.page-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.page-header-box {
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: #fff;
+    border-radius: 20px;
+    padding: 22px 24px;
+}
+
+.page-heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.small-muted {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.95rem;
+}
+
+.search-card,
+.table-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.search-input {
+    height: 52px;
+    border-radius: 14px;
+    font-size: 1rem;
+}
+
+.table-card .card-header {
+    padding: 18px 22px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.visitor-table thead th {
+    background: #eef2f7;
+    color: #1e3a5f;
+    font-weight: 700;
+    padding: 16px 14px;
+    border-bottom: 1px solid #dbe2ea;
+    white-space: nowrap;
+}
+
+.visitor-table tbody td {
+    padding: 18px 14px;
+    vertical-align: middle;
+    border-color: #edf2f7;
+}
+
+.visitor-table tbody tr:hover {
+    background: #f8fbff;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    min-width: 95px;
+    text-align: center;
+}
+
+.status-pending {
+    background: #fff4e8;
+    color: #d97706;
+}
+
+.status-approved {
+    background: #eafaf1;
+    color: #15803d;
+}
+
+.status-rejected {
+    background: #fdecec;
+    color: #dc2626;
+}
+
+.navbar-main {
+    background: linear-gradient(135deg, #0f172a, #1d4ed8);
+    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.15);
+}
+
+@media (max-width: 991.98px) {
+    .page-wrapper {
+        margin-left: 0;
+        padding: 80px 14px 18px;
+    }
+
+    .page-card {
+        padding: 16px;
+        border-radius: 18px;
+    }
+
+    .page-header-box {
+        padding: 18px;
+        border-radius: 16px;
+    }
+
+    .page-heading {
+        font-size: 1.35rem;
+    }
+
+    .visitor-table thead th,
+    .visitor-table tbody td {
+        white-space: nowrap;
+    }
+}

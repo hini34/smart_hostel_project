@@ -1,0 +1,108 @@
+.bg-sidebar {
+    background: linear-gradient(180deg, #0f172a, #111827, #020617);
+}
+
+/* Desktop Sidebar */
+.sidebar-desktop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 245px;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 24px 14px;
+    color: #fff;
+    z-index: 1050;
+    box-shadow: 4px 0 18px rgba(0, 0, 0, 0.08);
+}
+
+.brand-box {
+    text-align: center;
+    padding: 14px 10px 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 18px;
+}
+
+.brand-box .icon-wrap {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 10px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(59, 130, 246, 0.18);
+    font-size: 24px;
+}
+
+.brand-box h5 {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.brand-box p {
+    margin: 6px 0 0;
+    color: #cbd5e1;
+    font-size: 0.85rem;
+}
+
+.sidebar-desktop .nav-link,
+.offcanvas .nav-link {
+    display: block;
+    padding: 11px 14px;
+    margin: 7px 0;
+    border-radius: 12px;
+    color: #dbeafe;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.sidebar-desktop .nav-link i,
+.offcanvas .nav-link i {
+    width: 24px;
+}
+
+.sidebar-desktop .nav-link:hover,
+.offcanvas .nav-link:hover {
+    background: rgba(37, 99, 235, 0.95);
+    color: #fff !important;
+    transform: translateX(3px);
+}
+
+.sidebar-desktop .nav-link.active,
+.offcanvas .nav-link.active {
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
+    color: #fff !important;
+    font-weight: 600;
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.25);
+}
+
+.sidebar-desktop .nav-link.text-danger:hover,
+.offcanvas .nav-link.text-danger:hover {
+    background: #dc2626;
+    color: #fff !important;
+}
+
+/* Offcanvas */
+.offcanvas.bg-sidebar {
+    width: 270px;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Responsive */
+@media (max-width: 767.98px) {
+    .sidebar-desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .offcanvas {
+        display: none;
+    }
+}

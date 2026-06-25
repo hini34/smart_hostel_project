@@ -1,0 +1,128 @@
+/* ===== SIDEBAR BASE ===== */
+.sidebar-desktop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    overflow-y: auto;
+    background: linear-gradient(180deg, #0f172a, #111827, #020617);
+    padding: 22px 14px;
+    z-index: 1000;
+    box-shadow: 4px 0 20px rgba(0,0,0,0.15);
+}
+
+/* ===== BRAND ===== */
+.brand-box {
+    text-align: center;
+    padding: 10px 10px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    margin-bottom: 18px;
+}
+
+.icon-wrap {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(37, 99, 235, 0.2);
+    font-size: 24px;
+}
+
+.brand-box h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.brand-box p {
+    font-size: 0.85rem;
+    color: #cbd5e1;
+    margin-top: 4px;
+}
+
+/* ===== NAV LINKS ===== */
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    margin: 6px 0;
+    border-radius: 10px;
+    color: #cbd5f5 !important;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.nav-link i {
+    width: 20px;
+    text-align: center;
+}
+
+/* Hover effect */
+.nav-link:hover {
+    background: #2563eb;
+    color: #fff !important;
+    padding-left: 20px;
+}
+
+/* Active link */
+.nav-link.active {
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
+    color: #fff !important;
+    font-weight: 600;
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+}
+
+/* Logout */
+.nav-link.text-danger {
+    color: #fca5a5 !important;
+}
+
+.nav-link.text-danger:hover {
+    background: #b91c1c;
+    color: #fff !important;
+}
+
+/* ===== MOBILE OFFCANVAS ===== */
+.bg-sidebar {
+    background: linear-gradient(180deg, #0f172a, #111827, #020617);
+}
+
+.offcanvas .nav-link {
+    color: #e5e7eb !important;
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.offcanvas .nav-link:hover {
+    background: #2563eb;
+    color: #fff !important;
+}
+
+.offcanvas .nav-link.active {
+    background: #2563eb;
+    color: #fff !important;
+}
+
+/* ===== SCROLLBAR ===== */
+.sidebar-desktop::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar-desktop::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 767px) {
+    .sidebar-desktop {
+        display: none;
+    }
+}

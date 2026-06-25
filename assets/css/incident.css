@@ -1,0 +1,19 @@
+.incident-page {
+    background: #f4f7fb;
+    font-family: 'Segoe UI';
+}
+
+.card {
+    border-radius: 16px;
+}
+
+.table {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table th {
+    background: #0f172a;
+    color: #fff;
+}

@@ -1,0 +1,173 @@
+body {
+    background: #f4f7fb;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mobile-topbar {
+    background: linear-gradient(135deg, #0f172a, #1d4ed8);
+    padding: 12px 10px;
+    z-index: 1050;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.mobile-topbar .navbar-brand {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.user-badge {
+    background: rgba(255,255,255,0.18);
+    color: #fff;
+    padding: 7px 12px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.security-content {
+    padding: 24px;
+    margin-left: 280px;
+    min-height: 100vh;
+}
+
+.page-header {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #fff;
+    border-radius: 22px;
+    padding: 28px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+    margin-top: 0;
+}
+
+.page-header h1 {
+    margin: 0 0 8px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.page-header p {
+    margin: 0;
+    color: rgba(255,255,255,0.85);
+}
+
+.live-badge {
+    background: rgba(255,255,255,0.16);
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.visitor-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 24px;
+}
+
+.entry-card,
+.info-card,
+.table-card {
+    background: #fff;
+    border-radius: 22px;
+    padding: 24px;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 10px;
+}
+
+.workflow-box {
+    display: grid;
+    gap: 16px;
+}
+
+.workflow-step {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 14px;
+    border-radius: 14px;
+}
+
+.step-number {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #0f172a;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.workflow-step p {
+    margin: 4px 0 0;
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+.custom-table thead th {
+    background: #f8fafc;
+    color: #334155;
+    font-weight: 700;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.custom-table tbody tr:hover {
+    background: #f8fbff;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 7px 14px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.status-pending {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.status-approved {
+    background: #ecfdf3;
+    color: #15803d;
+}
+
+.status-rejected {
+    background: #fef2f2;
+    color: #b91c1c;
+}
+
+@media (max-width: 991px) {
+    .security-content {
+        margin-left: 0;
+        padding: 90px 16px 16px;   /* top gap for fixed navbar */
+    }
+
+    .page-header {
+        margin-top: 6px;           /* extra small gap */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .visitor-grid {
+        grid-template-columns: 1fr;
+    }
+}

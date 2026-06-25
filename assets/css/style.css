@@ -1,0 +1,118 @@
+body{
+    font-family: 'Segoe UI', sans-serif;
+    padding-top: 55px; 
+    
+}
+
+/* Navbar */
+.navbar{
+    background: linear-gradient(90deg, #0d6efd, #6610f2);
+}
+
+.navbar-brand,
+.nav-link{
+    color:white !important;
+    font-weight:500;
+}
+
+/* Dropdown */
+.dropdown-menu{
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.dropdown-item{
+    padding: 10px 15px;
+    font-weight: 500;
+}
+
+.dropdown-item:hover{
+    background: #0d6efd;
+    color: white;
+}
+
+/* Hero Section */
+.hero{
+    background: url("../../image/img1.jpeg") no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background: rgba(0,0,0,0.6);  
+    pointer-events: none;
+}
+
+.hero-content{
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero-content p{
+    font-size: 18px;
+}
+
+/* Button */
+.btn-custom{
+    background:#ffc107 !important;
+    border:none !important;
+    padding:12px 30px;
+    font-weight:600;
+    color:#fff !important;        
+    border-radius:8px;
+    display:inline-block;
+    text-decoration:none;
+    margin-top:20px;
+}
+
+.btn-custom:hover{
+    background-color:#e0a800;
+    color:#fff;
+}
+
+/* Feature Cards */
+.feature-box{
+    border-radius: 10px;
+    transition: 0.3s;
+    border: none;
+}
+
+.feature-box:hover{
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+.feature-icon{
+    font-size: 35px;
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+/* Login Section */
+.login-section{
+    background:#f8f9fa;
+    padding:40px 0;
+}
+
+/* Footer */
+footer{
+background:#111;
+    color:#fff;
+    padding:15px 0;
+}
