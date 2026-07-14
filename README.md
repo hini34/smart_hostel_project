@@ -50,7 +50,7 @@ In this project, I developed a web-based Hostel Management System using PHP, MyS
 * Student Profile Management
 * Dashboard with Statistics and Charts
 * Roommate Details and Room History
-* CRUD Operations for Students, Rooms, Fees, Complaints, Visitors, and Notices
+* CRUD Operations for Students, Rooms, Complaints, Visitors, and Notices
 
 ## Admin Module
 
